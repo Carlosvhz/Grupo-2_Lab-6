@@ -4,17 +4,33 @@ persona::persona(){
 
 }
 
-persona::persona(string pnombre,char pgenero,int colorCabello,int colorOjos,int colorPiel,bool pfertilidad){
+persona::persona(string pnombre,char pgenero,int colorCabello,int colorOjos,int colorPiel,bool pfertilidad,string go
+                  ,string gp, string gpl){
   nombre = pnombre;
   genero = pgenero;
   color_cabello = colorCabello;
   color_ojos = colorOjos;
   color_piel = colorPiel;
   fertilidad = pfertilidad;
+  genOjo = go;
+  genPelo = gp;
+  genPiel = gpl;
 }
 
 string persona::getNombre(){
   return nombre;
+}
+
+string persona::getGenOjo(){
+  return genOjo;
+}
+
+string persona::getGenPelo(){
+  return genPelo;
+}
+
+string persona::getGenPiel(){
+  return genPiel;
 }
 
 char persona::getGenero(){
@@ -40,6 +56,7 @@ bool persona::getFertilidad(){
 //Operadores sobrecargados
 
 persona* persona::operator+(persona& p){
+
     return 0;
 }
 
