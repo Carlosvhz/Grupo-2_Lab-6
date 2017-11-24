@@ -37,6 +37,9 @@ bool persona::getFertilidad(){
   return fertilidad;
 }
 
+string getGenes(){
+  return genes;
+}
 //Operadores sobrecargados
 
 persona* persona::operator+(persona& p){

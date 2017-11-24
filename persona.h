@@ -13,6 +13,7 @@ class persona{
     int color_ojos;
     int color_piel;
     bool fertilidad;
+    string genes;
 
   public:
     string getNombre();
@@ -21,6 +22,7 @@ class persona{
     int getColorOjos();
     int getColorPiel();
     bool getFertilidad();
+    string getGenes();
     //Sobrecargado
     persona* operator+(persona&);
     persona* operator*(persona&);
