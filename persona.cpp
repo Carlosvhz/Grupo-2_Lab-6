@@ -42,3 +42,7 @@ bool persona::getFertilidad(){
 persona* persona::operator+(persona& p){
     return 0;
 }
+
+persona* persona::operator*(persona& p){
+    return 0;
+}

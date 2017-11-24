@@ -23,7 +23,7 @@ class persona{
     bool getFertilidad();
     //Sobrecargado
     persona* operator+(persona&);
-      //persona* operator*();
+    persona* operator*(persona&);
     //Constructor
     persona(string,char,int,int,int,bool);
     persona();

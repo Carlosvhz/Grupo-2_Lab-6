@@ -1,17 +1,17 @@
-#include <iostrea>
+#include <iostream>
 #include <vector>
 
 
 using namespace std;
 
-int menu();
+//int menu();
 
 
 int main(){
 	int opcion =-1;
 	do
 	{
-		opcion= menu();
+		//opcion= menu();
 		if (opcion==1)
 		{
 
@@ -23,6 +23,5 @@ int main(){
 			cout<<"Hasta la vista"<<endl;
 		}
 	} while (opcion!=3);
-
   return 0;
 }
