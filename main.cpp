@@ -1,13 +1,9 @@
 #include <iostream>
 #include <vector>
-#include "persona"
+#include "persona.h"
 
-	
 using namespace std;
-
-//int menu();
-
-
+int menu();
 
 int main(){
 	int opcion =-1;
@@ -16,10 +12,10 @@ int main(){
 		//opcion= menu();
 		if (opcion==1)
 		{
-			
+
 		}else if (opcion==2)
 		{
-			
+
 		}else if (opcion==3)
 		{
 			cout<<"Hasta la vista"<<endl;
@@ -29,10 +25,10 @@ int main(){
 }
 
 int menu(){
-	int resp !=-1;
+	int resp =-1;
 	do
 	{
-		cout<<"1. Agregar Personas"<<endl;	
+		cout<<"1. Agregar Personas"<<endl;
 		cout<<"2. Eliminar"<<endl;
 		cout<<"3. Salir"<<endl;
 		cin>>resp;
