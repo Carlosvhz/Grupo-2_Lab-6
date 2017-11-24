@@ -21,6 +21,12 @@ class persona{
     int getColorOjos();
     int getColorPiel();
     bool getFertilidad();
+    //Sobrecargado
+    persona* operator+(persona&);
+      //persona* operator*();
+    //Constructor
+    persona(string,char,int,int,int,bool);
+    persona();
 };
 
 #endif
