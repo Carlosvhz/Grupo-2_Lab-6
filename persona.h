@@ -25,6 +25,7 @@ class persona{
     persona* operator+(persona&);
     persona* operator*(persona&);
     //Constructor
+    /**/
     persona(string,char,int,int,int,bool);
     persona();
 };
