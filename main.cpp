@@ -5,20 +5,21 @@
 using namespace std;
 int menu();
 persona* agregar();
-
-vector <persona*> lista;
+vector<persona*> eliminar(vector<persona*>);
 
 int main(){
+	vector <persona*> lista;
 	int opcion =-1;
 	do
 	{
-		//opcion= menu();
+		opcion=menu();
 		if (opcion==1)
 		{
 			persona* person = agregar();		
+			lista.push_back(person);
 		}else if (opcion==2)
 		{
-
+			lista= eliminar(lista);
 		}else if (opcion==3)
 		{
 			cout<<"Hasta la vista"<<endl;
@@ -108,4 +109,26 @@ persona* agregar(){
 	}
 	persona* person = new persona(nombre,genero,cabello,ojo,piel,fertil);
 	return person;
+}
+vector<persona*> eliminar(vector<persona*>lista){
+	if (lista.size()>0)
+	{
+		int posicion= -1;
+		cout<<"Ingrese el index de la posicion a eliminar desde 0 hasta "<<lista.size()-1<<endl;
+		for (int i = 0; i < lista.size(); ++i)
+		{
+			persona* person = lista.at(i);
+			cout<<i<<" "<<person->getNombre()<<endl;			
+		}
+		do
+		{
+			cout<<"Ingrese la posicion a eliminar"<<endl;
+			cin>>posicion;
+		} while (posicion<0&&posicion>=lista.size());
+		lista.erase(lista.begin()+posicion);
+		return lista;
+	}else{
+		cout<<"La lista esta vacia"<<endl;
+		return lista;
+	}
 }
